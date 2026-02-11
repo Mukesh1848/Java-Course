@@ -6,30 +6,31 @@
 // 3. Local inner class
 // 4. Anonymous inner class
 
-
-
+// Member Inner Class: When you need a class that is tightly coupled with the outer class and requires access to its members.
+// Static Nested Class:	When the inner class can work independently of the outer class and does not require instance variables.
+// Local Inner Class: When you need a short-lived class inside a method, especially for data encapsulation within that method.
+// Anonymous Inner Class: When you need to override methods quickly, commonly used in event handling (e.g., button click listeners).
 
 package inner_classes;
 
 public class Test {
-    
+
     public static void main(String[] args) {
         Car myCar = new Car("Toyota");
-        
+
         // Accessing the inner class to start the engine
         Car.engine engine = myCar.new engine();
         System.out.println();
-        
+
         // Starting the engine
         engine.start();
-        
+
         // Stopping the engine
         engine.stop();
-
 
         // Creating a Computer object
         Computer myComputer = new Computer("Dell XPS", "11th Gen", "Windows 10");
         // Accessing the static inner class OperatingSystem
-        Computer.OperatingSystem os = new Computer.OperatingSystem("Windows 10");   
+        Computer.OperatingSystem os = new Computer.OperatingSystem("Windows 10");
     }
 }
