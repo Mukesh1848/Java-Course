@@ -44,14 +44,15 @@
 
 // Unboxing is just the reverse process of autoboxing. It is the automatic conversion of a wrapper class object to the corresponding primitive data type.
 
-public class autoAndUnBoxing {
-    
-    public static void main(String []args){
+
+
+public class AutoBoxingAndUnBoxing {
+        public static void main(String []args){
 
         // Autoboxing
         int x = 5;
         Integer y = x; // Modern java
-        Integer z = new Integer(x); // Old java(The constructor Integer(int) has been deprecated since version 9 and marked for removal)
+        // Integer z = new Integer(x); // Old java(The constructor Integer(int) has been deprecated since version 9 and marked for removal)
         Integer num = Integer.valueOf(x); // Internally works modern java
         Boolean bool = true;
         Character ch = 'c';
@@ -78,11 +79,12 @@ public class autoAndUnBoxing {
 
 // Internally Integer class
 
-class Integer {
+class IntegerClass {
     int value;
     // constructor
     static Integer valueOf(int x){
         // something
+        return Integer.valueOf(x);
     }
 
     int intValue(){
