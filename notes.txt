@@ -1,0 +1,5 @@
+Q1. Why one public class per file 
+
+Ans.-> Java enforces a rule of having at most one public class per file primarily to simplify how the compiler and the Java Virtual Machine (JVM) locate and manage source code.
+
+Q.2 
